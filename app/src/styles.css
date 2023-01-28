@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: 15px;
+}
+
+.navbar {
+	background: green;
+	display: flex;
+	align-items: center;
+	padding: 20px 15px;
+	margin-bottom: 20px;
+}
+
+.navbar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.navbar ul li {
+	display: inline-block;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.navbar ul li a {
+	color: #fff;
+}
+
+.post {
+	border: 1px solid green;
+	margin-bottom: 15px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.post h2 {
+	margin: 10px 0;
+}
+
+.post-enter {
+	opacity: 0;
+	transform: translateX(-100vw);
+}
+.post-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 500ms ease-in;
+}
+.post-exit {
+	opacity: 1;
+	transform: translateX(0);
+}
+.post-exit-active {
+	opacity: 0;
+	transform: translateX(-100vw);
+	transition: all 500ms ease-in;
+}
+
+.page {
+	border: 1px solid green;
+	padding: 5px;
+	background: none;
+	cursor: pointer;
+	margin: 1px;
+}
+
+.page-current {
+	border-color: red;
+}
+
+.btns-wrap {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+	min-width: 150px;
+}
+
+.btns-wrap Button:last-of-type {
+	margin-left: 5px;
+}
